@@ -1,0 +1,47 @@
+ 
+<html>
+  <head>
+    <title>Image recognition</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+   <link rel="stylesheet" type = "text/css" href="style.css">
+  
+  </head>
+
+  <body>
+  <div class="container">
+    
+    <center>
+      <h1>Cam Family</h1>
+      <br><br>
+
+      <p style="font-size: 22px;">The Model is trained to Identify My Family.</p>
+
+      <label>Webcam View - </label>
+
+      <br><br>
+      <div id="camera" style="width: 350px; height: 300px;"></div>
+      <br><br>
+
+      <br><br>
+      <div id="result"></div>
+      <br><br>
+
+      <p style="font-size: 22px;">Who Do I see : <span id="nameOfResult"></span> </p>
+      <p style="font-size: 22px;"> My Certainty : <span id="accuracyOfResult"></span> %</p>
+      <button class="btn btn-warning" onclick="take_snapshot()">Capture an Image</button>
+      <button class="btn btn-danger">Who Do I See?</button>
+    </center>
+
+  </div>
+<script src="main.js"></script>
+
+  </body>
+</html>
+
+  
